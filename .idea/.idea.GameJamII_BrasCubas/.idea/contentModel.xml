@@ -4,6 +4,14 @@
     <e p="C:\GitHub\GameJamII_BrasCubas" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Packages" t="Include">
+          <e p="PolygonSciFiCity" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Polygon_Triplanar.shader" t="Include" />
+              <e p="Polygon_UVScroll.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Player.cs" t="Include" />
         </e>
