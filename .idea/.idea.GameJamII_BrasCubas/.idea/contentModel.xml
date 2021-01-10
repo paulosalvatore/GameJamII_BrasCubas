@@ -13,6 +13,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Draw.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerCollision.cs" t="Include" />
         </e>
