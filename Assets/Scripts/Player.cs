@@ -22,6 +22,9 @@ public class Player : MonoBehaviour
 
     private bool _isColliding;
 
+    [SerializeField]
+    private float maxVelocity;
+
     private void Awake()
     {
         if (Instance == null)
@@ -36,6 +39,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        rb.velocity = new Vector3(
+            -Mathf.Min(Mathf.Abs(rb.velocity.x), maxVelocity),
+            rb.velocity.y,
+            rb.velocity.z
+        );
+
         // Time.timeScale = 1f;
 
         // if (!_isColliding)
